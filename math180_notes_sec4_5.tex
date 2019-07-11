@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[letterpaper, portrait, margin=1in]{geometry}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+
+\newcommand{\example}[1]{\noindent\textbf{Example #1\quad}}
+\newcommand{\exercise}[1]{\noindent\textbf{Exercise #1\quad}}
+\newcommand{\problem}[1]{\noindent\textbf{Problem #1\quad}}
+
+\pagenumbering{arabic} % arabic, roman, Roman, alph, Alph, gobble
+%\setcounter{page}{0} % sets the initial page
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\setlength{\baselineskip}{15pt}
+\linespread{1.2}
+
+\font\sf = cmss10
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{MATH 180 Notes}
+\rhead{Section 4.5: Summary of Curve Sketching}
+\rfoot{Page \thepage}
+%\thispagestyle{empty}
+
+
+
+\begin{document}
+
+\subsubsection*{Guidelines for Sketching a Curve}
+
+\begin{itemize}
+\item [A.] \textbf{Domain}: Of course!
+\item [B.] \textbf{Intercepts}: (i) $y$-intercept: $(0,f(0))$; (ii) $x$-intercept: Solve the equation $f(x) = 0$. Only the real solutions. Be aware that in most of cases you will not be able to solve this equation.
+\item [C.] \textbf{Symmetry}: If $f$ is even, then we get the portion of the graph on the left hand side of $y$-axis
+for free. The same is true for an odd function. We just need to flip the portion of the graph over the $x$-axis 
+and then $y$-axis to get the portion on the left hand side. But this feature rarely occurs.
+\item [D.] \textbf{Asymptotes}: (i) Horizontal Asymptote (HA) is found by finding the limits $\lim_{x \to \infty} f(x)$ and $\lim_{x \to -\infty} f(x)$; (ii) Vertical Asymptote (VA) happens at $x = a$ when $\lim_{x \to a^{\pm}} f(x) = \pm \infty$; (iii) Slant Asymptote (SA): The function of the form $f(x)/g(x)$ has a slant asymptote $y = mx + b$ if the quotient and the remainder obtained upon dividing $f(x)$ by $g(x)$ using the long division method is $mx$ and $b$ respectively.
+\item [E.] \textbf{Intervals of Increase or Decrease}: Use the Increasing/Decreasing test.
+\item [F.] \textbf{Local Maximum and Minimum Values}: Use the first derivative test.
+\item [G.] \textbf{Concavity and Points of Inflection}: Use the Concavity test.
+\item [H.] \textbf{Sketch the Curve}.
+\end{itemize}
+
+
+
+
+\end{document}

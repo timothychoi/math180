@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[letterpaper, portrait, margin=1in]{geometry}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+
+\newcommand{\example}[1]{\noindent\textbf{Example #1\quad}}
+\newcommand{\exercise}[1]{\noindent\textbf{Exercise #1\quad}}
+\newcommand{\problem}[1]{\noindent\textbf{Problem #1\quad}}
+
+\pagenumbering{arabic} % arabic, roman, Roman, alph, Alph, gobble
+%\setcounter{page}{0} % sets the initial page
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\setlength{\baselineskip}{15pt}
+\linespread{1.2}
+
+\font\sf = cmss10
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{MATH 180 Worksheet}
+\rhead{Section 5.3: The Fundamental Theorem of Calculus}
+\rfoot{Page \thepage}
+%\thispagestyle{empty}
+
+
+\begin{document}
+
+\exercise{1} Use the Fundamental Theorem of Calculus, Part 1 to find the derivative of the function.
+\begin{flalign*}
+\,\,\,(a)\quad & g(x) = \int_1^x \ln(1 + t^2)\, dt & \\
+\,\,\,(b)\quad & h(u) = \int_0^u \frac{\sqrt{t}}{t + 1}\, dt & \\
+\,\,\,(c)\quad & R(y) = \int_y^2 t^3\sin(t) \, dt & \\
+\,\,\,(d)\quad & h(x) = \int_1^{\sqrt{x}} \frac{z^2}{z^4+1} \, dz & \\
+\,\,\,(e)\quad & y = \int_0^{x^4} \cos^2(\theta) \, d\theta & \\
+\,\,\,(f)\quad & y = \int_{\sin(x)}^1 \sqrt{1+t^2}\, dt & 
+\end{flalign*}
+
+\exercise{2} Evaluate the integral.
+\begin{flalign*}
+\,\,\,(a)\quad & \int_0^1 (1 - 8v^3 + 16v^7) \, dv & \\
+&&\\
+\,\,\,(b)\quad & \int_{-5}^5 e \, dx & \\
+&&\\
+\,\,\,(c)\quad & \int_{-1}^2 (3u - 2)(u + 1) \, du & \\
+&&\\
+\,\,\,(d)\quad & \int_{\pi/4}^{\pi/3} \csc^2(\theta) \, d\theta & \\
+&&\\
+\,\,\,(e)\quad & \int_0^1 \cosh(t) \, dt & \\
+&&\\
+\,\,\,(f)\quad & \int_1^3 \frac{y^3 - 2y^2 - y}{y^2} \, dy & 
+\end{flalign*}
+
+
+\pagebreak
+
+\exercise{3} Find the derivative of the function.
+$$ g(x) = \int_{1 - 2x}^{1 + 2x} t\sin(t) \, dt $$
+
+\vspace{200pt}
+
+\exercise{4} If $f(x) = \int_0^x (1 - t^2)e^{t^2} \, dt$, on what
+interval is $f$ increasing?
+
+\vspace{200pt}
+
+\exercise{5} The \textbf{error function} is defined as follows:
+$$ \mathrm{erf}(x) = \frac{2}{\sqrt{\pi}}\int_0^x e^{-t^2} \, dt $$
+Show that the function $y = e^{x^2}\mathrm{erf}(x)$ satisfies the
+differential equation $y' = 2xy + \frac{2}{\sqrt{\pi}}$.
+
+\end{document}
